@@ -1,0 +1,346 @@
+* {
+   padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.wraper{
+    font-family: 'Roboto', sans-serif;
+    background: url("../img/wallpaper-2128422_1280.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main-homepage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1500px;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
+    padding: 10px 0px;
+    background: none;
+}
+.logo{
+    max-width: 200px;
+}
+.hamburger-menu{
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    background: none;
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menu-item a{
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight:800;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 0px 3px;
+}
+.menu-item a:after{
+    content: "";
+    position: absolute;
+    background-color: #a0a0a0;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.menu-item a:hover{
+    color: #a0a0a0;
+}
+.menu-item a:hover::after{
+    width: 100%;
+}
+.main-my{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+}
+.my{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+    }
+    .my-img{
+        max-width: 200px;
+        width: 100%;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        margin-bottom: 20px;
+        box-shadow: 8px 1px 23px -12px;
+    }
+    .my-name{
+        font-size: 43px;
+    }
+    .my h3{
+        font-size: 19px;
+    }
+    .my-line{
+    width: 100%;
+    height: 2px;
+    background: #fff;   
+    margin: 8px 0px 7px 0px;
+
+    }
+    .arrow{
+        max-width: 70px;
+        width: 100%;
+    }
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 900px;
+        width: 100%;
+        color: #fff;
+        padding: 20px 0px 30px 0px;
+    }
+    
+    .about-me h1{
+        font-size: 32px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+    }
+    .about-me p{
+        font-size: 20px;
+    }
+    .about-line{
+     width: 100%;
+    height: 2px;
+    background: #fff;   
+    margin: 30px 0px 30px 0px;
+    }
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    color: #fff;
+}
+.projects h1{
+    text-transform: uppercase;
+}
+.projects-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    padding: 30px 0px;
+}
+.pizza-house{
+    max-width: 420px;
+    width: 100%;
+    border: 3px #fff solid;
+}
+.pizza-house-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 380px;
+    width: 100%;
+    font-size: 20px;
+}
+.pizza-house-about h3{
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    color: #fff;
+}
+.contact h1{
+    text-transform: uppercase;
+    padding: 15px 0px 15px 0px;
+}
+.contact p{
+    font-size: 20px;
+}
+.contact-wrep{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 360px;
+    width: 100%;
+}
+.mail{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 34px 0px 0px 0px;
+}
+.mail:hover{
+    text-decoration: none;
+    color:#a0a0a0;
+    font-size: 22px;
+    padding: 34px 0px 0px 0px;
+}
+
+.contact1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+}
+.fab{
+    color: #fff;
+    font-size: 36px;
+    margin: 13px 45px;
+}
+.fab:hover{
+    color: #a0a0a0;
+    font-size: 36px;
+    margin: 13px 45px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.footer p{
+    font-size: 18px;
+    color: #a0a0a0;
+}
+.footer-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-evenly;
+}
+.footer-cont{
+    font-size: 25px;
+    color: #a0a0a0;
+    padding: 0px;
+}
+.footer-cont:hover{
+    font-size: 25px;
+    color: #fff;
+    padding: 0px;
+
+}
+
+
+@media screen and (max-width:807px){
+    .projects-row{
+        flex-direction: column;
+    }
+    .about-me{
+        width: 90%;
+    }
+    .projects{
+        width: 90%;
+    }
+    .contact{
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width:600px){
+   .menu-list {
+       position: fixed;
+        right: -20px;
+        top: 87px;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        flex-direction: column;
+        max-width: 200px;
+        height: 50%;
+        justify-content: space-around;
+        border-radius: 42px;
+   }
+   .hamburger-menu{
+    display: flex;
+    }   
+    .menu-list.active{
+        display: flex;
+        transition: 0.8s ease-in;
+    }
+
+    .hamburger-menu.active .line:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger-menu.active .line:nth-child(1) {
+        transform: translateY(13px) rotate(405deg);
+        transition: 1s;
+        
+    }
+    .hamburger-menu.active .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-405deg);
+        transition: 1s;
+    }
+}
